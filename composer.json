@@ -1,0 +1,21 @@
+"name": "mootensai/yii2-before-query",
+    "type": "library",
+    "description": "Add before query event on Yii 2 models",
+    "keywords": ["Yii2","before query"],
+    "homepage": "http://github.com/mootensai/yii2-before-query",
+    "license": "none",
+    "authors": [
+        {
+            "name": "Yohanes Candrajaya",
+            "email": "moo.tensai@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "beforeQueryTrait": "base"
+        }
+    }
