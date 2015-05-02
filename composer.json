@@ -1,4 +1,5 @@
-"name": "mootensai/yii2-before-query",
+{
+	"name": "mootensai/yii2-before-query",
     "type": "library",
     "description": "Add before query event on Yii 2 models",
     "keywords": ["Yii2","before query"],
@@ -19,3 +20,4 @@
             "beforeQueryTrait": "base"
         }
     }
+}
