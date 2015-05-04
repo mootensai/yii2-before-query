@@ -1,8 +1,7 @@
 <?php
 
-namespace common\traits\base;
+namespace mootensai\traits\base;
 trait BeforeQueryTrait{
-    use \yii\db\ActiveRelationTrait;
 
     public static function find() {
         $obj = new static;
