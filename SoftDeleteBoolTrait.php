@@ -11,7 +11,7 @@
  *
  * @author Yohanes
  */
-namespace mootensai\traits;
+namespace mootensai\yii2-before-query;
 
 trait SoftDeleteBoolTrait{
 //    use base\BeforeQueryTrait;
