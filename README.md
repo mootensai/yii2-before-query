@@ -1,6 +1,25 @@
 # yii2-before-query
 Add before query event on Yii 2 models
 
+## Installation
+
+The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
+
+Either run
+
+```bash
+$ composer require mootensai/yii2-before-query
+```
+
+or add
+
+```
+"mootensai/yii2-before-query": "dev-master"
+```
+
+to the `require` section of your `composer.json` file.
+
+
 1. Base Trait Before Query
 ------------------
 
