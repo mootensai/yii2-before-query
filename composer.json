@@ -19,5 +19,5 @@
 		"psr-4": {
 			"mootensai\\yii2-before-query\\": ""
 		}
-	},
+	}
 }
