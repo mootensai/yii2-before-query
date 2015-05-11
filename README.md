@@ -4,8 +4,7 @@ Add before query event on Yii 2 models
 1. Base Trait Before Query
 ------------------
 
-~~~
-[php]
+```php
 namespace common\traits\base;
 trait BeforeQueryTrait{
 
@@ -21,20 +20,19 @@ trait BeforeQueryTrait{
         return parent::find()->andFilterWhere($condition);
     }
 }
-~~~
+```
 
 2. Add new property on model
 ----------------------------------------------------------
 
 Next, you can add new property on your model like this :
 
-~~~
-[php]
+```php
 class MyClass extends \yii\db\ActiveRecord{
     use \common\traits\base\BeforeQueryTrait;
     public static $BEFORE_QUERY = ['myColumn' => 'myValue'];
 }
-~~~
+```
 
 3. You can create a new trait.
 ------------------------------------------------------------------------
@@ -42,8 +40,7 @@ class MyClass extends \yii\db\ActiveRecord{
 
 For example, i've created Soft Delete Boolean Trait :
 
-~~~
-[php]
+```php
 trait SoftDeleteBoolTrait{
     public static $BEFORE_QUERY_SOFT_DELETE = ['isdeleted' => 0];
     
@@ -60,19 +57,18 @@ trait SoftDeleteBoolTrait{
         $model->save(false,[$col]);
     }
 }
-~~~
+```
 
 Use it on model : 
 
 
 
-~~~
-[php]
+```php
 class MyClass extends \yii\db\ActiveRecord{
     use \common\traits\base\BeforeQueryTrait;
     use \common\traits\SoftDeleteBoolTrait;
 }
-~~~
+```
 
 
 
