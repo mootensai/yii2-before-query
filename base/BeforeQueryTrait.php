@@ -1,6 +1,6 @@
 <?php
 
-namespace mootensai\traits\base;
+namespace mootensai\yii2-before-query\base;
 trait BeforeQueryTrait{
 
     public static function find() {
