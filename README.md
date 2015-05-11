@@ -84,8 +84,8 @@ Use it on model :
 
 ```php
 class MyClass extends \yii\db\ActiveRecord{
-    use \common\traits\base\BeforeQueryTrait;
-    use \common\traits\SoftDeleteBoolTrait;
+    use \mootensai\beforequery\base\BeforeQueryTrait;
+    use \mootensai\beforequery\traits\SoftDeleteBoolTrait;
 }
 ```
 
