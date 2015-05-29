@@ -90,6 +90,3 @@ class MyClass extends \yii\db\ActiveRecord{
 }
 ```
 
-
-
-Soli Deo Gloria
