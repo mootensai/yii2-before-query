@@ -1,5 +1,11 @@
 <?php
-
+/**
+ * BeforeQueryTrait
+ * Base class to do before query
+ *
+ * @author Yohanes Candrajaya <moo.tensai@gmail.com>
+ * @since 1.0
+ */
 namespace mootensai\beforequery\base;
 trait BeforeQueryTrait{
 
