@@ -4,7 +4,7 @@ namespace mootensai\beforequery\traits;
 
 use yii\db\Expression;
 trait SoftDeleteDateTimeTrait{
-    public static $BEFORE_QUERY_SOFT_DELETE = ['deleted' => new Expression('NULL')];
+    public static $BEFORE_QUERY_SOFT_DELETE = ['deleted' => 'NULL'];
     
     public function deleteSoft() {
         $this->{$this->BEFORE_QUERY_SOFT_DELETE} = new Expression('NOW()');
