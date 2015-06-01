@@ -2,7 +2,7 @@
     "name": "mootensai/yii2-before-query",
     "type": "library",
     "description": "Add before query or before find event on Yii 2 models",
-    "keywords": ["Yii2","before query","before-query","before","query","beforefind", "before find","find","before-find"],
+    "keywords": ["Yii2","before query","before","query","beforefind", "before find","find"],
     "homepage": "http://github.com/mootensai/yii2-before-query",
     "license": "none",
     "authors": [
@@ -18,6 +18,11 @@
     "autoload": {
 	"psr-4": {
 		"mootensai\\beforequery\\": ""
+	}
+    },
+    "extra": {
+	"branch-alias": {
+    		"dev-master": "1.0.x-dev"
 	}
     }
 }
