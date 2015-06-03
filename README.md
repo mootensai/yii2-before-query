@@ -53,6 +53,9 @@ class MyClass extends \yii\db\ActiveRecord{
     public static $BEFORE_QUERY = ['myColumn' => 'myValue'];
 }
 ```
+NB : the content of your `public static $BEFORE_QUERY` can be learn here
+
+http://www.yiiframework.com/doc-2.0/yii-db-queryinterface.html#where%28%29-detail
 
 3. You can create a new trait.
 ------------------------------------------------------------------------
