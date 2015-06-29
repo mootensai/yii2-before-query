@@ -18,6 +18,9 @@ trait BeforeQueryTrait{
                 $condition = array_merge($condition, $property->getValue($obj));
             }
         }
+        if(array_search(NULL, $condition, true)){
+            return parent::find()->andWhere($condition);
+        }
         return parent::find()->andFilterWhere($condition);
     }
 }
