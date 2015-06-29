@@ -13,7 +13,7 @@ trait SoftDeleteDateTimeTrait{
     
     public static function restore($id,$softDeleteColumn = 'deleted') {
         $model = parent::findOne($id, 1);
-        $model->{$softDeleteColumn} = new Expression('NULL');
+        $model->{$softDeleteColumn} = NULL;
         $model->save(false,[$softDeleteColumn]);
     }
 }
